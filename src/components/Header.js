@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 const Header = ({title}) => {
     return (
         <header>
-            <h1 style={headingStyle}>Task {title}</h1>
+            <h1>Task {title}</h1>
         </header>
     )
 }
@@ -18,9 +18,10 @@ Header.propTypes = {
     title: PropTypes.string.isRequired,
 }
 
-const headingStyle = {
-    color: "blue",
-    backgroundColor: "yellow"
-}
+//CSS in js
+// const headingStyle = {
+//     color: "blue",
+//     backgroundColor: "yellow"
+// }
 
 export default Header
